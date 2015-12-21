@@ -21,13 +21,12 @@ countDic = int(0)
 print("\nProcessing:")
 '''compare to entire dictionary'''
 for eachDic in dicArray:
+    print(eachDic)
     if int(0) == countDic:
-        print(eachDic)
         with open(eachDic, "r") as ins:
             for line in ins:
                 merge.append(line.rstrip())
     else:
-        print(eachDic)
         new_word_array = []
         duplicates = []
         new_list = []
