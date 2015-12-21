@@ -1,5 +1,5 @@
 # Python
-script for combining all text, txt file under same directory into one(line by line) with No duplicates.
+script for combining all text, txt file under same directory into one (line by line) with No duplicates.
 actually for combining text dictionary for text mining.
 
 # How to Use
