@@ -1,7 +1,5 @@
 #encoding:utf-8
-import os
-import sys
-import time
+import os, sys, time
 start_time = time.time()
 
 dicDirectory = sys.argv[1]
@@ -40,6 +38,10 @@ for eachDic in dicArray:
 
         ''' check if duplicated then put it into the duplicateList '''
         for new_word in new_word_array:
+            ''' for filter anything '''
+            if '..' in new_word:
+                    duplicates.append(new_word)
+
             for old_word in merge:
                 if new_word == old_word:
                     duplicates.append(new_word)
@@ -59,4 +61,4 @@ result.write("\n".join(merge))
 result.close()
 
 ''' information logging '''
-print("\n-->",countDic," dictionary:\n ","	".join(dicName),"\n\n---> joined into: ",outPutFile,"\n---> %s seconds" % (time.time() - start_time),"\n")
+print("\n-->",countDic," dictionary:\n ","	".join(dicName),"\n\n---> joined into: ",outPutFile,"\n---> Dictionary Size: ",len(merge)," words\n---> %s seconds" % (time.time() - start_time),"\n")
