@@ -8,4 +8,5 @@ python dicMerge.py "Full Path of your directory" "output_file_name.txt"
 e.g. "Full Path of your directory" = /home/Users/combining_folder_name/
 
 then all *.txt file are under this combining_folder_name.
-"output_file_name.txt" = result.txt
+
+e.g. "output_file_name.txt" = result.txt
